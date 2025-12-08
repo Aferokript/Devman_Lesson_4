@@ -19,4 +19,5 @@ green_complete = green.crop(coordinate_green)
 
 
 complete_monro = Image.merge('RGB', (red_blend, green_complete, blue_blend))
-complete_monro.save('complete_monro.jpg')
+complete_monro.thumbnail((80, 80))
+complete_monro.save('complete_monro.jpg'
